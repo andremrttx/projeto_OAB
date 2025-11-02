@@ -11,20 +11,24 @@
     <body>
 <header>
         <nav>
-      <div class="logo">Quiz</div>
+      <div class="logo">Quiz Espectro</div>
       <img src="midias/fita_autismo.png" width="60px">
       <ul>
-        <li><a href="#saude">Saude❤️</a></li>
-        <li><a href="#trabalho">Trabalho💼</a></li>
-        <li><a href="#Educação">Educação📚</a></li>
+ <li><a href="index.html">INICIO</a></li>
       </ul>
     </nav>
 </header>
 <main>
     <div id="conteudo">
+            <div class="botoes">
+        <button class="botao-content" onclick="Saude()"><img src="midias/icon-saude-Photoroom.png" width="50px">SAÚDE</button>
+        <button class="botao-content" onclick="Trabalho()"><img src="midias/icon-trabalho-Photoroom.png" width="50px" >TRABALHO</button>
+        <button class="botao-content" onclick="educação()"><img src="midias/icon-mochila-Photoroom.png" width="50px">EDUCAÇÃO</button>
+        <button class="botao-content"><img src="midias/icon-dinheiro.png" width="50px">IMPOSTOS</button>        
+    </div>
         <section id="saude">
-        <h1>Saude❤️</h1>
-        <div class="caixatexto">
+            <h1>Saude❤️</h1>
+        <div class="caixatexto" style="background-color: #84E191;">
 <button class="botao-jogo" onclick="exibir_G()"><p>direitos gerais</p></button>
     <button class="botao-jogo" onclick="exibir_E()"><p>Saude emocional</p></button>
 <div id="S_geral" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
@@ -77,9 +81,9 @@ reduzir a culpa e a ansiedade materna, fortalecendo o vínculo mãe-filho.
 </p>
  </div>
 </section>
-<section id="trabalho">
+<section id="trabalho" style="display: none;">
 <h1>Trabalho💼</h1>
-    <div class="caixatexto">
+    <div class="caixatexto" style="background-color: #f6c5ac;">
     <button class="botao-jogo" onclick="exibir_T()"><p>Direitos trabalhistas</p></button>
     <button class="botao-jogo" onclick="exibir_A()"><p>Aposentadoria</p></button>
         <div id="T_geral" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
@@ -156,7 +160,7 @@ O benefício não dá 13º e não gera pensão por morte, mas pode ser revisado 
         </div>
     </div>
 </section>
-<section id="Educação">
+<section id="Educação" style="display: none;">
     <h1>Educação📚</h1>
     <div class="caixatexto">
     <button class="botao-jogo" onclick="exibir_Edu()"><p>Direitos a Educação📚</p></button>

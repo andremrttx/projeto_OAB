@@ -29,13 +29,13 @@
     <div id="conteudo">
       <div class="botoes">
       <button class="botao-index" onclick="exibir_QM()"><img src="midias/peça_quebra_cabeca.png" width="50px">QUEM SOMOS</button>
-     <button class="botao-index" onclick="exibir_GP()"><img src="midias/peça_quebra_cabeca.png" width="50px">SOBRE NOSSO <br>PROJETO</button>
-    <button class="botao-index" onclick="exibir_JG()"><img src="midias/peça_quebra_cabeca.png" width="50px">JOGO</button>
+    <a href="content.html" class="botao-index"><img src="midias/peça_quebra_cabeca.png" width="50px">DIREITOS</a>
+    <button class="botao-index" onclick="exibir_JG()"><img src="midias/peça_quebra_cabeca.png" width="50px">VAMOS JOGAR</button>
     </div>
       <section id="sobre">
-      <div id="Qm_somos" style="display: none;">
+      <div id="Qm_somos" style="display: block;">
       <div class="caixatexto">
-      <img src="midias/quebra_cabeca_semfundo-Photoroom.png" width="70px">
+      <img src="midias/logobranca-Photoroom.png" width="70px">
       <h1>Comissão de Direito da Pessoa com Autismo – OAB/DF Subseção Águas Claras</h1>
       <h3>O que é uma Comissão da OAB/DF?</h3>
       <p>Nos termos do Regimento Interno da OAB/DF, compete ao Conselho Pleno a 
@@ -91,15 +91,6 @@ na luta contra a discriminação e o preconceito.</p>
       </div>
       </section>
 
-      <section id="projeto">
-        <div id="Sobre_pj" style="display: none;">
-        <div class="caixatexto">
-          <h1>Sobre nosso projeto</h1>
-          <p>O projeto tem como objetivo informar pais e responsáveis sobre <b>leis e direitos de pessoas autistas</b> de forma divertida, através de um jogo desenvolvido por nosso grupo.</p>
-        </div>
-        </div>
-      </section>
-
       <section id="jogo">
         <div id="jogo_regras" style="display: none;">
         <div class="container">
@@ -114,8 +105,7 @@ na luta contra a discriminação e o preconceito.</p>
               <li>No final é possível conferir as respostas erradas e as corretas.</li>
             </ul>
 
-            <a href="jogo.html" class="botao-jogo">🎮 Jogar agora</a>
-            <a href="content.html" class="botao-jogo">preparação para o jogo</a>
+            <a href="jogo.html" id="botao-jogar">🎮 Jogar agora</a>
           </div>
         </div>
 

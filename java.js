@@ -41,23 +41,25 @@ document.getElementById("Edu").style.display = "block";
     }
 }
 function exibir_QM(){
-    if(Qm_somos.style.display === "none"){
 document.getElementById("Qm_somos").style.display = "block";
-    }else{
-        document.getElementById("Qm_somos").style.display = "none";
-    }
-}
-function exibir_GP(){
-    if(Sobre_pj.style.display === "none"){
-document.getElementById("Sobre_pj").style.display = "block";
-    }else{
-        document.getElementById("Sobre_pj").style.display = "none";
-    }
+document.getElementById("jogo_regras").style.display = "none";
 }
 function exibir_JG(){
-    if(jogo_regras.style.display === "none"){
+document.getElementById("Qm_somos").style.display = "none";
 document.getElementById("jogo_regras").style.display = "block";
-    }else{
-        document.getElementById("jogo_regras").style.display = "none";
-    }
+}
+function Saude(){
+document.getElementById("saude").style.display = "block";
+document.getElementById("trabalho").style.display = "none";
+document.getElementById("Educação").style.display = "none";
+}
+function Trabalho(){
+document.getElementById("saude").style.display = "none";
+document.getElementById("trabalho").style.display = "block";
+document.getElementById("Educação").style.display = "none";
+}
+function educação(){
+document.getElementById("saude").style.display = "none";
+document.getElementById("trabalho").style.display = "none";
+document.getElementById("Educação").style.display = "block";
 }
