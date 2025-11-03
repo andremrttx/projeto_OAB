@@ -1,199 +1,272 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
+
+<head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>conteudo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conteudo</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="java.js"></script>
-    </head>
-    <body>
-<header>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+</head>
+
+<body>
+    <header>
         <nav>
-      <div class="logo">Quiz Espectro</div>
-      <img src="midias/fita_autismo.png" width="60px">
-      <ul>
- <li><a href="index.html">INICIO</a></li>
-      </ul>
-    </nav>
-</header>
-<main>
-    <div id="conteudo">
+            <div class="logo">Quiz Espectro</div>
+            <img src="midias/fita_autismo.png" width="60px">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="conteudo">
             <div class="botoes">
-        <button class="botao-content" onclick="Saude()"><img src="midias/icon-saude-Photoroom.png" width="50px">SAÚDE</button>
-        <button class="botao-content" onclick="Trabalho()"><img src="midias/icon-trabalho-Photoroom.png" width="50px" >TRABALHO</button>
-        <button class="botao-content" onclick="educação()"><img src="midias/icon-mochila-Photoroom.png" width="50px">EDUCAÇÃO</button>
-        <button class="botao-content"><img src="midias/icon-dinheiro.png" width="50px">IMPOSTOS</button>        
-    </div>
-        <section id="saude">
-            <h1>Saude❤️</h1>
-        <div class="caixatexto" style="background-color: #84E191;">
-<button class="botao-jogo" onclick="exibir_G()"><p>direitos gerais</p></button>
-    <button class="botao-jogo" onclick="exibir_E()"><p>Saude emocional</p></button>
-<div id="S_geral" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
-            <h1>Direitos a saude:</h1>
-        <ul>
-    <li>Carência nos Planos de Saúde: O tratamento precoce 
-e contínuo para o autismo é considerado uma situação de 
-urgência médica, o que implica que os planos de saúde não 
-podem exigir o cumprimento do prazo de carência de  180 
-dias para o início das terapias multiprofissionais. A 
-autorização imediata deve ocorrer em até 24 horas após a 
-solicitação médica.</li>
- <li>Garantia de Atendimento pelos Planos de Saúde: A 
-Resolução Normativa nº 539/2022 da ANS garante a 
-cobertura ilimitada de sessões com psicólogos, terapeutas 
-ocupacionais, fonoaudiólogos e fisioterapeutas. 
-Método e Reembolso: O plano de saúde é obrigado a 
-custear o tratamento no método e na técnica prescrita 
-pelo médico (ex: ABA). Se a rede credenciada não tiver 
-profissionais especializados ou vagas, a operadora deve 
-garantir o acesso, incluindo o reembolso integral dos 
-atendimentos realizados com prestadores não 
-credenciados.</li>
-<li>O Estado deve fornecer gratuitamente medicamentos e tratamentos prescritos para o TEA, inclusive terapias complementares quando indicadas.</li>
-<li>O SUS deve garantir avaliação e diagnóstico o mais cedo possível, preferencialmente na infância.
-    Após o diagnóstico, a pessoa tem direito a iniciar imediatamente o tratamento adequado.</li>
-<li>O cuidado deve ser feito por equipe especializada e adaptado às necessidades da pessoa autista</li>
-<li>Os pais ou responsáveis servidores publicos, têm direito à redução da jornada de trabalho, sem redução de salário, para acompanhar o tratamento e terapias do filho.</li>
-</ul>
-</div><div id="S_emocional" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
-<h1>saude emocional e maternidade:</h1>
-<p>A maternidade é uma experiência marcada por intensas transformações emocionais,
-sociais e físicas. Quando uma mulher se torna mãe de uma criança autista,
-essa vivência pode assumir contornos ainda mais complexos.
-O diagnóstico do Transtorno do Espectro Autista (TEA) geralmente desperta sentimentos de incerteza,
-medo e culpa, além de exigir adaptações constantes na rotina familiar. Nesse contexto,
-a saúde mental da mãe se torna um pilar essencial tanto para o seu bem-estar quanto para o
-desenvolvimento saudável da criança.<br>
-O cuidado de uma criança autista exige atenção contínua, paciência e dedicação.
-Muitas mães enfrentam jornadas de cuidado intensas, com terapias,
-consultas médicas e desafios comportamentais diários.
-Esse cenário pode gerar sobrecarga emocional e física, resultando em altos índices de ansiedade,
-depressão e exaustão materna.<br>
-composta por familiares, profissionais de saúde e grupos de mães 
-é um fator de proteção fundamental. Quando o sistema de saúde oferece atendimento psicológico 
-especializado, tanto para a criança quanto para os cuidadores, há uma melhora significativa na 
-qualidade de vida familiar. Além disso, o acolhimento empático dos profissionais de saúde ajuda a 
-reduzir a culpa e a ansiedade materna, fortalecendo o vínculo mãe-filho.
+                <button class="botao-content" id="botao-saude" onclick="Saude()"><img src="midias/saude-Photoroom.png"
+                        width="50px">SAÚDE</button>
+                <button class="botao-content" id="botao-trabalho" onclick="Trabalho()"><img
+                        src="midias/trabalho-Photoroom.png" width="50px">TRABALHO</button>
+                <button class="botao-content" id="botao-educaçao" onclick="educação()"><img
+                        src="midias/educação-Photoroom.png" width="50px">EDUCAÇÃO</button>
+                <button class="botao-content" id="botao-dinheiro" onclick="impostos()"><img
+                        src="midias/icon-dinheiro.png" width="50px">IMPOSTOS</button>
+            </div>
+            <section id="saude">
+                <h1>Saude❤️</h1>
+                <div class="caixatexto" style="background-color: #84E191;">
+                    <button class="botao-jogo" onclick="exibir_G()">
+                        <p>direitos gerais</p>
+                    </button>
+                    <button class="botao-jogo" onclick="exibir_E()">
+                        <p>Saude emocional</p>
+                    </button>
+                    <div id="S_geral" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
+                        <h1>Direitos a saude:</h1>
+                        <ul>
+                            <li>Carência nos Planos de Saúde: O tratamento precoce
+                                e contínuo para o autismo é considerado uma situação de
+                                urgência médica, o que implica que os planos de saúde não
+                                podem exigir o cumprimento do prazo de carência de 180
+                                dias para o início das terapias multiprofissionais. A
+                                autorização imediata deve ocorrer em até 24 horas após a
+                                solicitação médica.</li>
+                            <li>Garantia de Atendimento pelos Planos de Saúde: A
+                                Resolução Normativa nº 539/2022 da ANS garante a
+                                cobertura ilimitada de sessões com psicólogos, terapeutas
+                                ocupacionais, fonoaudiólogos e fisioterapeutas.
+                                Método e Reembolso: O plano de saúde é obrigado a
+                                custear o tratamento no método e na técnica prescrita
+                                pelo médico (ex: ABA). Se a rede credenciada não tiver
+                                profissionais especializados ou vagas, a operadora deve
+                                garantir o acesso, incluindo o reembolso integral dos
+                                atendimentos realizados com prestadores não
+                                credenciados.</li>
+                            <li>O Estado deve fornecer gratuitamente medicamentos e tratamentos prescritos para o TEA,
+                                inclusive terapias complementares quando indicadas.</li>
+                            <li>O SUS deve garantir avaliação e diagnóstico o mais cedo possível, preferencialmente na
+                                infância.
+                                Após o diagnóstico, a pessoa tem direito a iniciar imediatamente o tratamento adequado.
+                            </li>
+                            <li>O cuidado deve ser feito por equipe especializada e adaptado às necessidades da pessoa
+                                autista</li>
+                            <li>Os pais ou responsáveis servidores publicos, têm direito à redução da jornada de
+                                trabalho, sem redução de salário, para acompanhar o tratamento e terapias do filho.</li>
+                        </ul>
+                    </div>
+                    <div id="S_emocional" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
+                        <h1>saude emocional e maternidade:</h1>
+                        <p>A maternidade é uma experiência marcada por intensas transformações emocionais,
+                            sociais e físicas. Quando uma mulher se torna mãe de uma criança autista,
+                            essa vivência pode assumir contornos ainda mais complexos.
+                            O diagnóstico do Transtorno do Espectro Autista (TEA) geralmente desperta sentimentos de
+                            incerteza,
+                            medo e culpa, além de exigir adaptações constantes na rotina familiar. Nesse contexto,
+                            a saúde mental da mãe se torna um pilar essencial tanto para o seu bem-estar quanto para o
+                            desenvolvimento saudável da criança.<br>
+                            O cuidado de uma criança autista exige atenção contínua, paciência e dedicação.
+                            Muitas mães enfrentam jornadas de cuidado intensas, com terapias,
+                            consultas médicas e desafios comportamentais diários.
+                            Esse cenário pode gerar sobrecarga emocional e física, resultando em altos índices de
+                            ansiedade,
+                            depressão e exaustão materna.<br>
+                            composta por familiares, profissionais de saúde e grupos de mães
+                            é um fator de proteção fundamental. Quando o sistema de saúde oferece atendimento
+                            psicológico
+                            especializado, tanto para a criança quanto para os cuidadores, há uma melhora significativa
+                            na
+                            qualidade de vida familiar. Além disso, o acolhimento empático dos profissionais de saúde
+                            ajuda a
+                            reduzir a culpa e a ansiedade materna, fortalecendo o vínculo mãe-filho.
 
-</p>
- </div>
-</section>
-<section id="trabalho" style="display: none;">
-<h1>Trabalho💼</h1>
-    <div class="caixatexto" style="background-color: #f6c5ac;">
-    <button class="botao-jogo" onclick="exibir_T()"><p>Direitos trabalhistas</p></button>
-    <button class="botao-jogo" onclick="exibir_A()"><p>Aposentadoria</p></button>
-        <div id="T_geral" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
-        <h1>Direitos trabalhistas</h1>
-        <ul>
-         <li>Toda pessoa autista tem direito de trabalhar em igualdade de condições com as demais.
-Nenhuma empresa pode negar emprego, promover demissão, ou negar oportunidades por causa do diagnóstico.</li>   
-        <li>Empresas com 100 ou mais empregados são obrigadas a reservar 2% a 5% das vagas para pessoas com deficiência — o que inclui pessoas autistas.</li>
-        <li>A empresa deve fazer adaptações razoáveis para garantir conforto e produtividade à pessoa autista.
-Essas adaptações podem incluir:
-Redução de estímulos visuais ou sonoros;
-Comunicação mais direta e previsível;
-Treinamento da equipe sobre inclusão;
-Flexibilidade de horário e rotina estruturada.</li>
-        <li>Se a pessoa autista foi contratada por meio da Lei de Cotas, ela só pode ser demitida após o empregador contratar outro trabalhador com deficiência para manter o percentual exigido.</li>    
-        <li>O Estado e empresas públicas devem oferecer cursos e programas de qualificação profissional acessíveis às pessoas com deficiência, incluindo autistas.
-Empresas privadas também podem oferecer treinamentos adaptados.</li>
-        </ul>
+                        </p>
+                    </div>
+            </section>
+            <section id="trabalho" style="display: none;">
+                <h1>Trabalho💼</h1>
+                <div class="caixatexto" style="background-color: #f6c5ac;">
+                    <button class="botao-jogo" onclick="exibir_T()">
+                        <p>Direitos trabalhistas</p>
+                    </button>
+                    <button class="botao-jogo" onclick="exibir_A()">
+                        <p>Aposentadoria</p>
+                    </button>
+                    <div id="T_geral" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
+                        <h1>Direitos trabalhistas</h1>
+                        <ul>
+                            <li>Toda pessoa autista tem direito de trabalhar em igualdade de condições com as demais.
+                                Nenhuma empresa pode negar emprego, promover demissão, ou negar oportunidades por causa
+                                do diagnóstico.</li>
+                            <li>Empresas com 100 ou mais empregados são obrigadas a reservar 2% a 5% das vagas para
+                                pessoas com deficiência — o que inclui pessoas autistas.</li>
+                            <li>A empresa deve fazer adaptações razoáveis para garantir conforto e produtividade à
+                                pessoa autista.
+                                Essas adaptações podem incluir:
+                                Redução de estímulos visuais ou sonoros;
+                                Comunicação mais direta e previsível;
+                                Treinamento da equipe sobre inclusão;
+                                Flexibilidade de horário e rotina estruturada.</li>
+                            <li>Se a pessoa autista foi contratada por meio da Lei de Cotas, ela só pode ser demitida
+                                após o empregador contratar outro trabalhador com deficiência para manter o percentual
+                                exigido.</li>
+                            <li>O Estado e empresas públicas devem oferecer cursos e programas de qualificação
+                                profissional acessíveis às pessoas com deficiência, incluindo autistas.
+                                Empresas privadas também podem oferecer treinamentos adaptados.</li>
+                        </ul>
+                    </div>
+                    <div id="T_aposentadoria" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
+                        <h1>Aposentadoria</h1>
+                        <p>A Lei nº 12.764/2012 reconhece a pessoa com Transtorno do Espectro Autista (TEA) como pessoa
+                            com deficiência.
+                            Com isso, ela passa a ter direito às mesmas proteções previdenciárias e trabalhistas
+                            garantidas às pessoas com deficiência pela Lei nº 8.213/1991 (Lei de Benefícios da
+                            Previdência Social).</p>
+                        <ul>
+                            <p>As pessoas com TEA (ou seus responsáveis) podem ter acesso a dois tipos principais de
+                                benefícios:</p>
+
+                            <p>🧠 A) Aposentadoria da Pessoa com Deficiência (para quem trabalha e contribui com o INSS)
+
+                                É destinada à pessoa autista que trabalha formalmente (ou como autônomo) e contribui
+                                para o INSS.
+                                O tempo necessário para se aposentar depende do grau da deficiência: leve, moderada ou
+                                grave.</p>
+                            <table border="1" style="width: min-content;">
+                                <tr>
+                                    <th>Grau da deficiência</th>
+                                    <th>Tempo de contribuiçao(homem)</th>
+                                    <th>Tempo de contribuiçao(mulher)</th>
+                                </tr>
+                                <tr>
+                                    <td>grave</td>
+                                    <td>25 anos</td>
+                                    <td>20 anos</td>
+                                </tr>
+                                <tr>
+                                    <td>moderada</td>
+                                    <td>29 anos</td>
+                                    <td>24 anos</td>
+                                </tr>
+                                <tr>
+                                    <td>leve</td>
+                                    <td>33 anos</td>
+                                    <td>28 anos</td>
+                                </tr>
+                            </table>
+                            <p>🧍‍♂️ B) Benefício de Prestação Continuada (BPC/LOAS)
+
+                                Esse não é uma aposentadoria, mas um benefício assistencial pago pelo governo federal.
+                                É destinado a pessoas com deficiência (incluindo autistas) que nunca contribuíram com o
+                                INSS e vivem em situação de baixa renda.
+
+                                🧾 Requisitos:
+
+                                Ter diagnóstico de autismo (qualquer grau);
+
+                                Comprovar incapacidade para o trabalho e vida independente;
+
+                                Renda familiar por pessoa menor que 1/4 do salário mínimo (em 2025, cerca de R$ 353,00
+                                por pessoa da família);
+
+                                Estar inscrito no CadÚnico (Cadastro Único para Programas Sociais).
+
+                                💰 Valor:
+
+                                Um salário mínimo por mês (R$ 1.412,00 em 2025).
+
+                                O benefício não dá 13º e não gera pensão por morte, mas pode ser revisado a cada 2 anos.
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="Educação" style="display: none;">
+                <h1>Educação📚</h1>
+                <div class="caixatexto" style="background-color: #e49edd;">
+                    <button class="botao-jogo" onclick="exibir_Edu()">
+                        <p>Direitos a Educação📚</p>
+                    </button>
+                    <div id="Edu" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
+                        <h1>Direitos a educação</h1>
+                        <ul>
+                            <li>Toda pessoa autista tem direito de estudar em escolas regulares, junto com alunos sem
+                                deficiência.
+                                A escola não pode recusar matrícula de uma criança ou adolescente com TEA sob qualquer
+                                justificativa.</li>
+                            <li>Além das aulas regulares, o estudante autista tem direito ao AEE, que oferece:
+                                Apoio pedagógico individualizado;
+                                Reforço de conteúdos;
+                                Materiais adaptados;
+                                Estratégias específicas de ensino.
+                                Esse atendimento deve ocorrer no contraturno (fora do horário da turma regular).</li>
+                            <li>A escola deve fornecer um acompanhante ou cuidador sempre que o estudante autista
+                                necessitar de auxílio para:
+                                Alimentar-se;
+                                Higienizar-se;
+                                Deslocar-se;
+                                Participar das atividades pedagógicas.</li>
+                            <li>O aluno com TEA deve ter métodos de ensino adaptados às suas necessidades.
+                                Exemplos:
+                                Rotina estruturada e previsível;
+                                Comunicação visual (pictogramas, imagens, vídeos);
+                                Avaliações adaptadas;
+                                Flexibilidade em prazos e tarefas.</li>
+                            <li>As redes de ensino (públicas e privadas) devem oferecer formação continuada aos
+                                professores e funcionários sobre autismo e educação inclusiva.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="impostos" style="display: none;">
+                <h1>Impostos💰</h1>
+                <div class="caixatexto">
+                    <button class="botao-jogo" onclick="exibir_I()" style="background-color: #8ed973;">Direitos
+                        tributarios</button>
+                    <div id="Direito_tri" style="display: none;">
+                        <h1>Direitos tributarios</h1>
+                        <ul>
+                            <li>Isenção de impostos na compra de veículos:Pessoas autistas (ou seus responsáveis legais)
+                                têm direito à isenção de vários impostos
+                                na compra de carro zero quilômetro.</li>
+                            <li>Isenção ou desconto no IPTU:Muitos municípios brasileiros oferecem isenção total ou
+                                parcial de IPTU para famílias que têm pessoa com deficiência, incluindo autistas.
+                                As regras variam conforme a cidade.</li>
+                            <li>Isenção de IPVA:Em vários estados, o IPVA também é isento para veículos destinados ao
+                                uso de pessoas com TEA.
+                                O carro pode ser registrado em nome da pessoa autista ou de seu responsável.</li>
+                            <li>Isenção de IRPF:O rendimento de aposentadoria, pensão ou reforma recebido por pessoa com
+                                autismo não é automaticamente isento, pois o TEA não consta expressamente na lista de
+                                doenças que geram isenção do IRPF (art. 6º, XIV, da Lei nº 7.713/1988).
+                                Porém, há decisões judiciais que reconhecem a isenção por analogia em casos de autismo
+                                severo, quando comprovada a incapacidade total para o trabalho.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div id="T_aposentadoria" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
-        <h1>Aposentadoria</h1>
-        <p>A Lei nº 12.764/2012 reconhece a pessoa com Transtorno do Espectro Autista (TEA) como pessoa com deficiência.
-Com isso, ela passa a ter direito às mesmas proteções previdenciárias e trabalhistas garantidas às pessoas com deficiência pela Lei nº 8.213/1991 (Lei de Benefícios da Previdência Social).</p>
-        <ul>
-        <p>As pessoas com TEA (ou seus responsáveis) podem ter acesso a dois tipos principais de benefícios:</p>
-
-<p>🧠 A) Aposentadoria da Pessoa com Deficiência (para quem trabalha e contribui com o INSS)
-
-É destinada à pessoa autista que trabalha formalmente (ou como autônomo) e contribui para o INSS.
-O tempo necessário para se aposentar depende do grau da deficiência: leve, moderada ou grave.</p>
-<table border="1" style="width: min-content;">
- <tr>
-    <th>Grau da deficiência</th>
-    <th>Tempo de contribuiçao(homem)</th>
-    <th>Tempo de contribuiçao(mulher)</th>
-</tr>
-<tr>
-    <td>grave</td>
-    <td>25 anos</td>
-    <td>20 anos</td>
-</tr>
-<tr>
-    <td>moderada</td>
-    <td>29 anos</td>
-    <td>24 anos</td>
-</tr>
-<tr>
-    <td>leve</td>
-    <td>33 anos</td>
-    <td>28 anos</td>
-</tr>
-</table>
-<p>🧍‍♂️ B) Benefício de Prestação Continuada (BPC/LOAS)
-
-Esse não é uma aposentadoria, mas um benefício assistencial pago pelo governo federal.
-É destinado a pessoas com deficiência (incluindo autistas) que nunca contribuíram com o INSS e vivem em situação de baixa renda.
-
-🧾 Requisitos:
-
-Ter diagnóstico de autismo (qualquer grau);
-
-Comprovar incapacidade para o trabalho e vida independente;
-
-Renda familiar por pessoa menor que 1/4 do salário mínimo (em 2025, cerca de R$ 353,00 por pessoa da família);
-
-Estar inscrito no CadÚnico (Cadastro Único para Programas Sociais).
-
-💰 Valor:
-
-Um salário mínimo por mês (R$ 1.412,00 em 2025).
-
-O benefício não dá 13º e não gera pensão por morte, mas pode ser revisado a cada 2 anos.</p>
-        </ul>
         </div>
-    </div>
-</section>
-<section id="Educação" style="display: none;">
-    <h1>Educação📚</h1>
-    <div class="caixatexto">
-    <button class="botao-jogo" onclick="exibir_Edu()"><p>Direitos a Educação📚</p></button>
-    <div id="Edu" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
-    <h1>Direitos a educação</h1>
-        <ul>
-    <li>Toda pessoa autista tem direito de estudar em escolas regulares, junto com alunos sem deficiência.
-    A escola não pode recusar matrícula de uma criança ou adolescente com TEA sob qualquer justificativa.</li>
-    <li>Além das aulas regulares, o estudante autista tem direito ao AEE, que oferece:
-    Apoio pedagógico individualizado;
-    Reforço de conteúdos;
-    Materiais adaptados;
-    Estratégias específicas de ensino.
-    Esse atendimento deve ocorrer no contraturno (fora do horário da turma regular).</li>
-    <li>A escola deve fornecer um acompanhante ou cuidador sempre que o estudante autista necessitar de auxílio para:
-    Alimentar-se;
-    Higienizar-se;
-    Deslocar-se;
-    Participar das atividades pedagógicas.</li>
-    <li>O aluno com TEA deve ter métodos de ensino adaptados às suas necessidades.
-    Exemplos:
-    Rotina estruturada e previsível;
-    Comunicação visual (pictogramas, imagens, vídeos);
-    Avaliações adaptadas;
-    Flexibilidade em prazos e tarefas.</li>
-    <li>As redes de ensino (públicas e privadas) devem oferecer formação continuada aos professores e funcionários sobre autismo e educação inclusiva.</li>
-    </ul>
-</div>
-    </div>
-    </section>
-</div>
-    </div>
 
-</main>
-    </body>
+    </main>
+</body>
+
 </html>

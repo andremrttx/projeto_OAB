@@ -216,5 +216,27 @@ align-items: center;
     margin: 20px 20px;
     height: 70px;
     width: 150px;
-
+}
+#botao-trabalho{
+  background-color: #f1aa84;
+  border-color: #f1aa84;
+}
+#botao-educaçao{
+  background-color: #e49edd;
+  border-color: #e49edd;
+}
+#botao-saude{
+  background-color: #8ed973;
+  border-color: #8ed973;
+}
+#botao-dinheiro{
+  background-color: #46b0e0;
+  border-color: #46b0e0;
+}
+@media screen and (max-width: 768px) {
+  /* Adicione estilos específicos aqui, por exemplo: */
+  .coluna {
+    width: 100%; /* Faz com que as colunas ocupem toda a largura */
+    flex-direction: column; /* Altera a direção do layout flexbox para coluna */
+  }
 }
