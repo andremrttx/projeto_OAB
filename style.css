@@ -233,7 +233,7 @@
   background-color: #46b0e0;
   border-color: #46b0e0;
 }
-@media screen and (max-width: 768px) {
+@media screen {
   #botoes-direitos{
  justify-content: center;
  align-items: center;
