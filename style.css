@@ -234,12 +234,20 @@
   border-color: #46b0e0;
 }
 @media screen and (max-width: 768px) {
-  /* Adicione estilos específicos aqui, por exemplo: */
-  .coluna {
-    width: 100%; /* Faz com que as colunas ocupem toda a largura */
-    flex-direction: column; /* Altera a direção do layout flexbox para coluna */
-  }
+  #botoes-direitos{
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ flex-direction: column;
 }
+#botoes-index{
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+}
+  }
+
 #botoes-index{
  justify-content: center;
  align-items: center;

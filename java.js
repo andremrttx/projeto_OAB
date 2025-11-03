@@ -79,14 +79,3 @@ function exibir_I() {
         document.getElementById("Direito_tri").style.display = "none";
     }
 }
-function inicializar(){
-    var userAgent = navigator.userAgent;
-if (/Mobi|Android|iPhone|iPad|iPod/i.test(userAgent)) {
-    document.getElementById("botoes-direitos").style.flexDirection = "column";
-    document.getElementById("botoes-index").style.flexDirection = "column";
-} else {
-    document.getElementById("botoes-direitos").style.flexDirection = "initial";
-    document.getElementById("botoes-index").style.flexDirection = "initial";
-}
-}
-inicializar();
