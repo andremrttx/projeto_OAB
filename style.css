@@ -198,10 +198,10 @@
     margin: 20px 20px;
     border-color: #84E191;
 }
-.botoes{
-display: flex;
-justify-content: center;
-align-items: center;
+#botoes-direitos{
+ justify-content: center;
+ align-items: center;
+ display: flex;
 }
 .botao-content{
     display: flex;
@@ -239,4 +239,9 @@ align-items: center;
     width: 100%; /* Faz com que as colunas ocupem toda a largura */
     flex-direction: column; /* Altera a direção do layout flexbox para coluna */
   }
+}
+#botoes-index{
+ justify-content: center;
+ align-items: center;
+ display: flex;
 }
