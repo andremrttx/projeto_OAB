@@ -173,8 +173,12 @@
       nav ul {
         gap: 10px;
       }
+      .tabela_aposentadoria{
+  width: 20px;              
+  border-collapse: collapse; 
+  font-size: 11px;           
+}
     }
-
       @keyframes descer {
     from {
       opacity: 0;
@@ -202,6 +206,7 @@
  justify-content: center;
  align-items: center;
  display: flex;
+ flex-direction: column;
 }
 .botao-content{
     display: flex;
@@ -213,9 +218,9 @@
     border-radius: 15px;
     text-decoration: none;
     font-weight: bold;
-    margin: 20px 20px;
-    height: 70px;
-    width: 150px;
+    margin: 10px 10px;
+    height: 100px;
+    width: 200px;
 }
 #botao-trabalho{
   background-color: #f1aa84;
@@ -233,23 +238,10 @@
   background-color: #46b0e0;
   border-color: #46b0e0;
 }
-@media screen {
-  #botoes-direitos{
- justify-content: center;
- align-items: center;
- display: flex;
- flex-direction: column;
-}
-#botoes-index{
- justify-content: center;
- align-items: center;
- display: flex;
- flex-direction: column;
-}
-  }
 
 #botoes-index{
  justify-content: center;
  align-items: center;
  display: flex;
-}
+ flex-direction: column;
+} 
