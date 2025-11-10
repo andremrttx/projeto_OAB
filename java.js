@@ -1,19 +1,3 @@
-var celular = {
-    indentificarCell: function(){
-    var celular = navigator.userAgent;
-    if(celular.indexOf("Android") != -1){
-    this.mudarTela();
-    }
-    if(celular.indexOf("iPhone") != -1){
-    this.mudarTela();
-    }
-    },
-    mudarTela: function(){
-    var tela = document.getElementById("botoes-index");
-    tela.style.flexDirection = "flex";
-    }
-}
-    celular.indentificarCell();
 function exibir_G() {
     if (S_geral.style.display === "none") {
         document.getElementById("S_geral").style.display = "block";
