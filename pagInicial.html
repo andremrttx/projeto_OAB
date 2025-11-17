@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto - Jogo Quiz Autismo</title>
+
+  <!-- Fonte moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="java.js"></script>
+</head>
+
+<body>
+
+  <!-- MENU FIXO -->
+  <header>
+    <nav>
+      <div class="logo">Quiz Espectro</div>
+      <img src="midias/fita_autismo.png" width="60px">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projeto">Projeto</a></li>
+        <li><a href="#jogo">Jogo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="conteudo">
+      <div id="botoes-index">
+        <button class="botao-index" onclick="exibir_QM()"><img src="midias/peça_quebra_cabeca.png" width="50px">QUEM
+          SOMOS</button>
+        <a href="content.html" class="botao-index"><img src="midias/peça_quebra_cabeca.png" width="50px">DIREITOS</a>
+        <button class="botao-index" onclick="exibir_JG()"><img src="midias/peça_quebra_cabeca.png" width="50px">VAMOS
+          JOGAR</button>
+      </div>
+      <section id="sobre">
+        <div id="Qm_somos" style="display: block;">
+          <div class="caixatexto">
+            <img src="midias/logobranca-Photoroom.png" width="70px">
+            <h1>Comissão de Direito da Pessoa com Autismo – OAB/DF Subseção Águas Claras</h1>
+            <h3>O que é uma Comissão da OAB/DF?</h3>
+            <p>Nos termos do Regimento Interno da OAB/DF, compete ao Conselho Pleno a
+              criação e a dissolução de comissões. As Comissões Temáticas são órgãos
+              internos das subseções da OAB que têm como finalidade assessorar e auxiliar
+              a Diretoria e o Conselho no cumprimento de seus objetivos institucionais.
+              Cada comissão possui atuação voltada a uma temática específica, buscando
+              responder às demandas da sociedade e da advocacia sobre determinado tema.
+              As comissões representam um espaço de participação ativa, produção de
+              conhecimento, promoção de debates e fortalecimento da advocacia e da
+              sociedade, sempre guiadas pelos valores éticos e democráticos que regem a
+              profissão.</p>
+            <h3>Finalidade Geral das Comissões</h3>
+            <ul>
+              <li>Assessorar a diretoria da OAB na valorização da advocacia.</li>
+              <li>Assessorar a diretoria da OAB na valorização da advocacia.</li>
+              <li>Realizar estudos, pareceres, pesquisas e notas técnicas.</li>
+              <li>Apoiar iniciativas de interesse público e jurídico ligadas à temática da comissão.</li>
+              <li>Desenvolver eventos, seminários e projetos de impacto social.</li>
+              <li>Aproximar a OAB da comunidade, ampliando representatividade e atuação social.</li>
+            </ul>
+            <h3>Trabalho Voluntário</h3>
+            <p>O trabalho nas comissões é exercido de forma altruísta e não remunerada,
+              exigindo comprometimento dos membros para que os projetos sejam eficazes
+              e tragam benefícios reais à sociedade.</p>
+            <h3>Comissão de Direito da Pessoa com Autismo</h3>
+            <p>A Comissão de Direito da Pessoa com Autismo é uma comissão temática da
+              OAB/DF Subseção Águas Claras, dedicada à defesa, promoção e efetivação
+              dos direitos das pessoas com Transtorno do Espectro Autista (TEA) e de suas
+              famílias.</p>
+            <h3>Objetivos Específicos</h3>
+            <ul>
+              <li>Estudo e aplicação do direito relacionado às pessoas com autismo, em
+                áreas como saúde, educação, inclusão social, acessibilidade e
+                cidadania.</li>
+              <li>Promoção de debates, seminários e palestras sobre direitos das
+                pessoas com autismo, conscientizando sociedade, instituições e
+                famílias.</li>
+              <li>Acompanhamento legislativo e judicial, contribuindo com pareceres
+                e sugestões para o aprimoramento das políticas públicas.</li>
+              <li>Integração com órgãos públicos, escolas, clínicas e entidades civis,
+                fomentando boas práticas inclusivas.</li>
+              <li>Apoio à advocacia que atua na defesa de pessoas com TEA, oferecendo
+                espaço de diálogo e produção técnica.</li>
+            </ul>
+            <h1>Importância Social</h1>
+            <p> Essa comissão é um canal institucional de defesa e inclusão, garantindo que
+              a OAB/DF cumpra sua função social ao se posicionar em prol de grupos
+              vulneráveis. Ao mesmo tempo, reforça a missão de promover uma advocacia
+              mais próxima da sociedade, engajada na proteção de direitos fundamentais e
+              na luta contra a discriminação e o preconceito.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="jogo">
+        <div id="jogo_regras" style="display: none;">
+          <div class="container">
+            <div class="regras">
+              <h1>🎮 Jogo</h1>
+              <h2>Regras do jogo:</h2>
+              <ul>
+                <li>É um jogo em formato de quiz (perguntas e respostas).</li>
+                <li>São três tópicos: Educação, Saúde e Trabalho.</li>
+                <li>Você começa no tópico <b>Educação</b> e precisa acertar 5 perguntas para avançar.</li>
+                <li>O jogador tem 2 vidas. Ao errar 2 vezes, o tópico é reiniciado.</li>
+                <li>No final é possível conferir as respostas erradas e as corretas.</li>
+              </ul>
+
+              <a href="jogo.html" id="botao-jogar">🎮 Jogar agora</a>
+            </div>
+          </div>
+
+          <div class="galeria">
+            <figure>
+              <img src="midias/tela inicial.png" alt="Tela inicial do jogo">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="midias/ilhas jogo.jpg" alt="Mapa do jogo" height="167px">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img src="midias/sala_jogo.jpg" alt="Tela de perguntas">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
