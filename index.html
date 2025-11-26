@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{
-    background-color: #fff;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-#imga{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-@media (max-width: 768px) {
-#img{
-    width: 400px;
-    position: absolute;
-    top: 70px;
-    right: 65px;
 
-}
-}
-</style>
+<head>
+    <meta charset="UTF-8">
+    <title>trilhas do cuidado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #fff;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        #imga {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 1000px) {
+            #img {
+                width: 400px;
+            }
+        }
+    </style>
+
+<body>
+    <script>
+        document.addEventListener("click", function () {
+            window.location.href = "pagInicial.html";
+        });
+    </script>
+    <img src="midias/Telaincial-Photoroom.png" width="600px" id="img">
 </body>
-<div id="imga">
-    <a href="pagInicial.html" id="img"><img src="midias/Telaincial-Photoroom.png" width="600px"></a>
-</div>
-    </html>
+
+</html>

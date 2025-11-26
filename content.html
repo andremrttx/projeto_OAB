@@ -13,32 +13,33 @@
 <body>
     <header>
         <nav>
-            <div class="logo">Quiz Espectro</div>
+            <div class="logo">Trilhas do cuidado</div>
             <img src="midias/fita_autismo.png" width="60px">
             <ul>
-                <li><a href="index.html">INICIO</a></li>
+                <li><a href="pagInicial.html">INICIO</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div id="conteudo">
             <div id="botoes-direitos">
-                <button class="botao-content" id="botao-saude" onclick="Saude()"><img src="midias/saude-Photoroom.png"
+                <button class="botao-content" id="botao-saude" onclick="exibirEOcultar(saude,trabalho,Educação,impostos)"><img src="midias/saude-Photoroom.png"
                         width="50px">SAÚDE</button>
-                <button class="botao-content" id="botao-trabalho" onclick="Trabalho()"><img
+                <button class="botao-content" id="botao-trabalho" onclick="exibirEOcultar(trabalho,saude,Educação,impostos)"><img
                         src="midias/trabalho-Photoroom.png" width="50px">TRABALHO</button>
-                <button class="botao-content" id="botao-educaçao" onclick="educação()"><img
+                <button class="botao-content" id="botao-educaçao" onclick="exibirEOcultar(Educação,saude,trabalho,impostos)"><img
                         src="midias/educação-Photoroom.png" width="50px">EDUCAÇÃO</button>
-                <button class="botao-content" id="botao-dinheiro" onclick="impostos()"><img
+                <button class="botao-content" id="botao-dinheiro" onclick="exibirEOcultar(impostos,saude,trabalho,Educação)"><img
                         src="midias/icon-dinheiro.png" width="50px">IMPOSTOS</button>
             </div>
             <section id="saude">
-                <h1>Saude❤️</h1>
+                <h1 style="align-items: center;display: flex; color: #fff;">Saude<img src="midias/saude-Photoroom.png"
+                        width="40px" style="align-items: center;"></h1>
                 <div class="caixatexto" style="background-color: #84E191;">
-                    <button class="botao-jogo" onclick="exibir_G()">
+                    <button class="botao-jogo" onclick="exibirEOcultar(S_geral,S_emocional)">
                         <p>direitos gerais</p>
                     </button>
-                    <button class="botao-jogo" onclick="">
+                    <button class="botao-jogo" onclick="exibirEOcultar(S_emocional,S_geral)">
                         <p>Saude emocional</p>
                     </button>
                     <div id="S_geral" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
@@ -103,12 +104,12 @@
                     </div>
             </section>
             <section id="trabalho" style="display: none;">
-                <h1>Trabalho💼</h1>
+                <h1 style="color: #fff;">Trabalho💼</h1>
                 <div class="caixatexto" style="background-color: #f6c5ac;">
-                    <button class="botao-jogo" onclick="exibir_T()">
+                    <button class="botao-jogo" onclick="exibirEOcultar(T_geral,T_aposentadoria)">
                         <p>Direitos trabalhistas</p>
                     </button>
-                    <button class="botao-jogo" onclick="exibir_A()">
+                    <button class="botao-jogo" onclick="exibirEOcultar(T_aposentadoria,T_geral)">
                         <p>Aposentadoria</p>
                     </button>
                     <div id="T_geral" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
@@ -201,9 +202,9 @@
                 </div>
             </section>
             <section id="Educação" style="display: none;">
-                <h1>Educação📚</h1>
+                <h1 style="color: #fff;">Educação📚</h1>
                 <div class="caixatexto" style="background-color: #e49edd;">
-                    <button class="botao-jogo" onclick="exibir_Edu()">
+                    <button class="botao-jogo" onclick="exibirEOcultar(Edu)">
                         <p>Direitos a Educação📚</p>
                     </button>
                     <div id="Edu" style="display: none;opacity: 0; animation: descer 1s ease-out forwards;">
@@ -238,9 +239,10 @@
                 </div>
             </section>
             <section id="impostos" style="display: none;">
-                <h1>Impostos💰</h1>
+                <h1 style="align-items: center;display: flex; color: #fff;">Impostos<img src="midias/icon-dinheiro.png"
+                        width="40px"></h1>
                 <div class="caixatexto">
-                    <button class="botao-jogo" onclick="exibir_I()" style="background-color: #8ed973;">Direitos
+                    <button class="botao-jogo" onclick="exibirEOcultar(Direito_tri)" style="background-color: #8ed973;">Direitos
                         tributarios</button>
                     <div id="Direito_tri" style="display: none;">
                         <h1>Direitos tributarios</h1>
