@@ -28,14 +28,14 @@
   <main>
     <div id="conteudo">
       <div id="botoes-index">
-        <button class="botao-index" onclick="exibir_QM()"><img src="midias/peça_quebra_cabeca.png" width="50px">QUEM
+        <button class="botao-index" onclick="exibirEOcultar(Qm_somos,jogo_regras)"><img src="midias/peça_quebra_cabeca.png" width="50px">QUEM
           SOMOS</button>
         <a href="content.html" class="botao-index"><img src="midias/peça_quebra_cabeca.png" width="50px">DIREITOS</a>
-        <button class="botao-index" onclick="exibir_JG()"><img src="midias/peça_quebra_cabeca.png" width="50px">VAMOS
+        <button class="botao-index" onclick="exibirEOcultar(jogo_regras,Qm_somos)"><img src="midias/peça_quebra_cabeca.png" width="50px">VAMOS
           JOGAR</button>
       </div>
       <section id="sobre">
-        <div id="Qm_somos" style="display: block;">
+        <div id="Qm_somos" style="display: none;">
           <div class="caixatexto">
             <img src="midias/logobranca-Photoroom.png" width="70px">
             <h1>Comissão de Direito da Pessoa com Autismo – OAB/DF Subseção Águas Claras</h1>
@@ -105,24 +105,48 @@
                 <li>Você começa no tópico <b>Educação</b> e precisa acertar 5 perguntas para avançar.</li>
                 <li>O jogador tem 2 vidas. Ao errar 2 vezes, o tópico é reiniciado.</li>
                 <li>No final é possível conferir as respostas erradas e as corretas.</li>
-                <li>Ao entrar no link escolhaa forma de download</li>
               </ul>
 
-              <a href="https://drive.google.com/drive/folders/1M2Dl2tR9W-kO78GVuI_0w3oncS_7eqJc" target="_blank" id="botao-jogar">🎮 Jogar agora</a>
+              <a id="botao-jogar">🎮 Jogar agora</a>
+              <script>
+var URL_DOWNLOAD_DESKTOP = "midias/Trilhas Do Cuidado - 1920x1080.exe";
+var URL_DOWNLOAD_MOBILE = 'midias/Trilhas do Cuidado - Celular.apk';
+var cell = identifyCell();
+function iniciarDownload() {
+    var urlParaDownload;
+    
+    if (cell == true) {
+        console.log("Dispositivo móvel detectado. Preparando download do arquivo mobile.");
+        urlParaDownload = URL_DOWNLOAD_MOBILE;
+    } else {
+        console.log("Dispositivo desktop detectado. Preparando download do arquivo desktop.");
+        urlParaDownload = URL_DOWNLOAD_DESKTOP;
+    }
+    window.location.href = urlParaDownload
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const botao = document.getElementById('botao-jogar');
+    
+    if (botao) {
+        botao.addEventListener('click', iniciarDownload);
+    }
+});
+              </script>
             </div>
           </div>
 
           <div class="galeria">
             <figure>
-              <img src="midias/tela inicial.png" alt="Tela inicial do jogo">
+              <img src="midias/ilha_1.png">
               <figcaption></figcaption>
             </figure>
             <figure>
-              <img src="midias/ilhas jogo.jpg" alt="Mapa do jogo" height="167px">
+              <img src="midias/ilha_02.png" alt="Mapa do jogo" height="167px">
               <figcaption></figcaption>
             </figure>
             <figure>
-              <img src="midias/sala_jogo.jpg" alt="Tela de perguntas">
+              <img src="midias/ilha_03(2).png" alt="Tela de perguntas">
               <figcaption></figcaption>
             </figure>
           </div>
