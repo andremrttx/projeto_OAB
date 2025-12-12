@@ -108,7 +108,31 @@
               </ul>
 
               <a id="botao-jogar">🎮 Jogar agora</a>
-  
+              <script>
+var URL_DOWNLOAD_DESKTOP = "midias/Trilhas Do Cuidado - 1920x1080.exe";
+var URL_DOWNLOAD_MOBILE = 'midias/Trilhas do Cuidado - Celular.apk';
+var cell = identifyCell();
+function iniciarDownload() {
+    var urlParaDownload;
+    
+    if (cell) {
+        console.log("Dispositivo móvel detectado. Preparando download do arquivo mobile.");
+        urlParaDownload = URL_DOWNLOAD_MOBILE;
+    } else {
+        console.log("Dispositivo desktop detectado. Preparando download do arquivo desktop.");
+        urlParaDownload = URL_DOWNLOAD_DESKTOP;
+    }
+    window.location.href = urlParaDownload
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const botao = document.getElementById('botao-jogar');
+    
+    if (botao) {
+        botao.addEventListener('click', iniciarDownload);
+    }
+});
+              </script>
             </div>
           </div>
 
